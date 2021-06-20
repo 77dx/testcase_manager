@@ -1,3 +1,6 @@
+mac连接linux
+ssh root@39.104.54.123
+
 检查市是否连接上github
 git remote -v
 ssh -T git@github.com
@@ -12,6 +15,9 @@ git remote add origin https://github.com/77dx/testcase_manager.git
 
 提交代码到远程仓库
 git push -u origin master
+
+从远程拉取代码
+git pull origin master
 
 本地分支与远程不一致
 需要重新拉取远程的代码和分支
@@ -32,3 +38,10 @@ django-admin.py startapp TestModel
 数据库迁移
 python manage.py migrate    # 创建表结构
 python manage.py makemigrations    #让 Django 知道我们在我们的模型有一些变更
+
+生成requirements.txt文件
+
+captcha
+django-simple-captcha
+
+

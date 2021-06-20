@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'testcase_manager.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'testcase_manage',
-        'HOST': 'localhost',
+        'NAME': 'testcase_manager',
+        'HOST': '39.104.54.123',
         'PORT': 3306,
         'USER': 'root',
-        'PASSWORD': '123456'
+        'PASSWORD': 'Dx396321556.'
     }
 }
 
