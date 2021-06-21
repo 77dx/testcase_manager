@@ -50,3 +50,12 @@ python manage.py makemigrations    #让 Django 知道我们在我们的模型有
 
 生成requirements.txt
 pip freeze > requirements.txt
+
+集成前端vue
+npm install -g vue-cli
+切换npm源
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+cnpm install
+
+在项目根目录下，创建前端工程
+vue-init webpack appfront
