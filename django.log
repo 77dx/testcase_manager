@@ -1,0 +1,8 @@
+Watching for file changes with StatReloader
+[21/Jun/2021 14:05:15] "GET /register/ HTTP/1.1" 200 4735
+[21/Jun/2021 14:05:15] "GET /static/bootstrap-3.4.1-dist/js/bootstrap.js HTTP/1.1" 200 75484
+[21/Jun/2021 14:05:15] "GET /static/bootstrap-3.4.1-dist/css/bootstrap.css HTTP/1.1" 200 145933
+[21/Jun/2021 14:05:15] "GET /static/js/jquery-3.5.1.js HTTP/1.1" 200 287630
+[21/Jun/2021 14:05:16] "GET /captchaimage/ab2d839ba83928371bea9e0c58eedf44ba80fe42/ HTTP/1.1" 200 5009
+[21/Jun/2021 14:05:17] "GET /static/bootstrap-3.4.1-dist/css/bootstrap.css.map HTTP/1.1" 200 390887
+[21/Jun/2021 14:05:18] "GET /static/images/002.jpg HTTP/1.1" 200 259024
