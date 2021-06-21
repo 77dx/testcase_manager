@@ -13,6 +13,18 @@ git remote add origin https://github.com/77dx/testcase_manager.git
 提交代码到远程仓库
 git push -u origin master
 
+查看本地分支
+git branch
+
+查看远程分支
+git branch -r
+
+查看所有分支
+git branch -a
+
+切换远程分支
+git checkout -b myRelease(new branch) origin/master
+
 本地分支与远程不一致
 需要重新拉取远程的代码和分支
 git init
@@ -25,6 +37,9 @@ git add .     //添加操作，后面的点代表全部添加，也可以只添�
 git commit -m"这里是提交的日志"      //提交到本地仓库
 git push origin HEAD:远端分支名       // 提交到远端
 
+从github拉取代码，取回 origin/master 分支，再与本地的 master 分支合并
+git pull origin master
+
 
 创建django app
 django-admin.py startapp TestModel
@@ -32,3 +47,6 @@ django-admin.py startapp TestModel
 数据库迁移
 python manage.py migrate    # 创建表结构
 python manage.py makemigrations    #让 Django 知道我们在我们的模型有一些变更
+
+生成requirements.txt
+pip freeze > requirements.txt

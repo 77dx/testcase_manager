@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--f2bwglw%du4-)-_sgl_^7&6pc38r*8u8h(or%1rzb7bvwmc=b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'testcase_manager.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'testcase_manage',
-        'HOST': 'localhost',
+        'NAME': 'testcase_manager',
+        'HOST': '39.104.54.123',
         'PORT': 3306,
         'USER': 'root',
-        'PASSWORD': '123456'
+        'PASSWORD': 'Dx396321556.'
     }
 }
 
