@@ -18,6 +18,5 @@ class User(models.Model):
         return self.account
 
     class Meta:
-        ordering = ['create_time']
         verbose_name = '用户'
         verbose_name_plural = '用户'

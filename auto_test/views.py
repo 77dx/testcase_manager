@@ -3,6 +3,7 @@ from django.shortcuts import HttpResponse
 from . import models
 from .forms import UserForm,RegisterForm
 import hashlib
+import json
 
 
 
@@ -82,11 +83,20 @@ def logout(request):
     request.session.flush()
     return redirect('/index/')
 
+def userList(request):
+    users = models.User.objects.all()
+    for i in users:
+        print(i.id)
+    return render(request,'userList.html',{'list':users})
+
+def editUser(request):
+    pass
 
 
-
-
-
+def deleteUser(request):
+    id = request.GET.get("id")
+    models.User.objects.filter(id=id).delete()
+    return redirect('/userList/')
 
 
 

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}用户列表{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="col-md-4 col-md-offset-4">
+            <table border="2">
+                <tr>
+                    <th>账号</th>
+                    <th>姓名</th>
+                    <th>创建时间</th>
+                    <th>操作</th>
+                </tr>
+                {% for user in list %}
+                <tr>
+                    <td>{{ user.account }}</td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.create_time }}</td>
+                    <td><button class="btn btn-primary">修改</button></td>
+                    <td><a href="/deleteUser/?id={{ user.id }}"><button class="btn btn-primary">删除</button></a></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div> <!-- /container -->
+{% endblock %}
