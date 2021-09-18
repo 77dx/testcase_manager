@@ -2,6 +2,9 @@
 git remote -v
 ssh -T git@github.com
 
+克隆项目
+git clone 项目地址
+
 创建公钥
 ssh-keygen -t rsa -C "396321556@qq.com"
 将本地的公钥复制下来，粘贴到github的ssh处
