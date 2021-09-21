@@ -1,3 +1,8 @@
 BUILD_ID=dontKillMe
-ps -aux | grep python3|xargs kill -9
-nohup python3 manage.py runserver 0.0.0.0:8000 >django.log 2>&1 &
+ProcNumber=`ps -ef | grep -w python | grep -v grep | wc -l`
+if [ $ProcNumber -el 0 ];then
+    echo "Django is not run"
+    nohup python3 manage.py runserver 0.0.0.0:8000 >django.log 2>&1 &
+else
+    echo "Django is running..."
+fi
