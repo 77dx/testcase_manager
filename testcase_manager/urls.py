@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from auto_test import views
+from ..auto_test import views
 from django.views.generic.base import TemplateView
 
 urlpatterns = [
@@ -29,4 +29,5 @@ urlpatterns = [
     # path('',TemplateView.as_view(template_name='index.html')),
     path('userList/',views.userList),
     path('deleteUser/',views.deleteUser),
+    path('api_userlist/',views.api_userlist),
 ]

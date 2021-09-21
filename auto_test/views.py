@@ -98,6 +98,10 @@ def deleteUser(request):
     models.User.objects.filter(id=id).delete()
     return redirect('/userList/')
 
+def api_userlist(request):
+    if request.method == "POST":
+        users = models.User.objects.all()
+        return HttpResponse(json.dumps(users), content_type='application/json')
 
 
 
