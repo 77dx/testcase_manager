@@ -62,3 +62,7 @@ cnpm install
 
 在项目根目录下，创建前端工程
 vue-init webpack appfront
+
+修改启动脚本会报错的问题
+查出进程id,并杀掉进程
+kill -9 $(ps -ef |grep python | grep -v grep | awk '{print $2}')

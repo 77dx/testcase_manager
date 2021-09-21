@@ -1,9 +1,11 @@
 from django.shortcuts import render,redirect
 from django.shortcuts import HttpResponse
+from django.core import serializers
 from . import models
 from .forms import UserForm,RegisterForm
 import hashlib
 import json
+from django.http import JsonResponse
 
 
 
@@ -99,14 +101,10 @@ def deleteUser(request):
     return redirect('/userList/')
 
 def api_userlist(request):
-    if request.method == "POST":
-        users = models.User.objects.all()
-        return HttpResponse(json.dumps(users), content_type='application/json')
-
-
-
-
-
+    if request.method == "POST" or request.method == "GET":
+        res = serializers.serialize("json",models.User.objects.all())
+        res = json.loads(res)
+        return JsonResponse(res,json_dumps_params={'ensure_ascii':False},safe=False)
 
 
 
