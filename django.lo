@@ -40,13 +40,3 @@ Traceback (most recent call last):
   File "/Users/cathy/github/testcase_manager/testcase_manager/testcase_manager/urls.py", line 18, in <module>
     from ..auto_test import views
 ValueError: attempted relative import beyond top-level package
-/Users/cathy/github/testcase_manager/testcase_manager/testcase_manager/urls.py changed, reloading.
-Watching for file changes with StatReloader
-Performing system checks...
-
-System check identified no issues (0 silenced).
-September 21, 2021 - 16:10:58
-Django version 3.2.4, using settings 'testcase_manager.settings'
-Starting development server at http://0.0.0.0:8000/
-Quit the server with CONTROL-C.
-Error: That port is already in use.
