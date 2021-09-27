@@ -49,4 +49,31 @@ September 21, 2021 - 16:10:58
 Django version 3.2.4, using settings 'testcase_manager.settings'
 Starting development server at http://0.0.0.0:8000/
 Quit the server with CONTROL-C.
-Error: That port is already in use.
+/Users/cathy/github/testcase_manager/testcase_manager/auto_test/views.py changed, reloading.
+Watching for file changes with StatReloader
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/django/core/management/__init__.py", line 419, in execute_from_command_line
+    utility.execute()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/django/core/management/__init__.py", line 413, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/django/core/management/base.py", line 354, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 61, in execute
+    super().execute(*args, **options)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/django/core/management/base.py", line 398, in execute
+    output = self.handle(*args, **options)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 96, in handle
+    self.run(**options)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 103, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/django/utils/autoreload.py", line 638, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/django/utils/autoreload.py", line 614, in start_django
+    ensure_echo_on()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/django/utils/autoreload.py", line 95, in ensure_echo_on
+    if not termios or not sys.stdin.isatty():
+AttributeError: 'NoneType' object has no attribute 'isatty'
