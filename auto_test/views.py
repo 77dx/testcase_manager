@@ -6,8 +6,7 @@ from .forms import UserForm,RegisterForm
 import hashlib
 import json
 from django.http import JsonResponse
-
-
+from django.core.paginator import Paginator,Page,EmptyPage,PageNotAnInteger
 
 def index(request):
     return render(request, "index.html")
@@ -86,10 +85,27 @@ def logout(request):
     return redirect('/index/')
 
 def userList(request):
-    users = models.User.objects.all()
-    for i in users:
-        print(i.id)
-    return render(request,'userList.html',{'list':users})
+    users_list = models.User.objects.all()
+    paginator = Paginator(users_list,10)
+    page = request.GET.get('page')
+    users = paginator.get_page(page)
+    # if page:
+    #     data_list = paginator.page(page).object_list
+    # else:
+    #     data_list = paginator.page(1).object_list
+    # try:
+    #     page_object = paginator.page(page)
+    # except PageNotAnInteger:
+    #     page_object = paginator.page(1)
+    # except EmptyPage:
+    #     page_object = paginator.page(paginator.num_pages)
+    # return render(request,'userList.html',{'page_object':page_object,'data_list':data_list})
+    return render(request, 'userList.html', {'users':users})
+
+def userInfo(request):
+    id = request.GET.get("id")
+    userInfo = models.User.objects.filter(id=id)
+    return render(request,'editUser.html',{'userInfo':userInfo})
 
 def editUser(request):
     pass

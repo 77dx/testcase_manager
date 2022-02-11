@@ -3,24 +3,41 @@
 {% block title %}用户列表{% endblock %}
 {% block content %}
     <div class="container">
-        <div class="col-md-4 col-md-offset-4">
-            <table border="2">
+        <div>
+            <table border="1" cellspacing="1" cellpadding="1">
                 <tr>
                     <th>账号</th>
                     <th>姓名</th>
                     <th>创建时间</th>
                     <th>操作</th>
                 </tr>
-                {% for user in list %}
+                {% for user in users %}
                 <tr>
-                    <td>{{ user.account }}</td>
-                    <td>{{ user.name }}</td>
-                    <td>{{ user.create_time }}</td>
-                    <td><button class="btn btn-primary">修改</button></td>
+                    <td width="100">{{ user.account }}</td>
+                    <td width="100">{{ user.name }}</td>
+                    <td width="200px">{{ user.create_time }}</td>
+                    <td><a href="/userInfo/?id={{ user.id }}"><button class="btn btn-primary">修改</button></a></td>
                     <td><a href="/deleteUser/?id={{ user.id }}"><button class="btn btn-primary">删除</button></a></td>
                 </tr>
                 {% endfor %}
             </table>
+            <ul class="pagination">
+                <span class="step-links">
+                    {% if users.has_previous %}
+                        <a href="?page=1">&laquo;第1页</a>
+                        <a href="?page={{ users.previous_page_number }}">前一页</a>
+                    {% endif %}
+
+                    <span class="current">
+                        第 {{ users.number }} / {{ users.paginator.num_pages }}页
+                    </span>
+
+                    {% if users.has_next %}
+                        <a href="?page={{ users.next_page_number }}">下一页</a>
+                        <a href="?page={{ users.paginator.num_pages }}">最后页 &raquo;</a>
+                    {% endif %}
+                </span>
+            </ul>
         </div>
     </div> <!-- /container -->
 {% endblock %}
