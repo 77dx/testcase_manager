@@ -53,6 +53,8 @@ python manage.py makemigrations    #让 Django 知道我们在我们的模型有
 
 生成requirements.txt
 pip freeze > requirements.txt
+安装requirements.txt
+pip install -r requirements.txt
 
 集成前端vue
 npm install -g vue-cli
