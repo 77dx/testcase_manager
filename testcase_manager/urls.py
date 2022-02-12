@@ -18,9 +18,10 @@ from django.urls import path,include
 from auto_test import views
 from django.views.generic.base import TemplateView
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index),
+    path('',TemplateView.as_view(template_name="index.html")),
     path('index/',views.index),
     path('login/',views.login),
     path('captcha',include('captcha.urls')),
