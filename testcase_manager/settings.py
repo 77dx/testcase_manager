@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'auto_test',
     'captcha',
+    'jobs',
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True

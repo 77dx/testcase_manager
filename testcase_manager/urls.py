@@ -19,6 +19,7 @@ from auto_test import views
 from django.views.generic.base import TemplateView
 
 urlpatterns = [
+    path("",include("jobs.urls")),
     path('admin/', admin.site.urls),
     path('',views.index),
     path('index/',views.index),
