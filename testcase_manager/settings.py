@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'auto_test',
     'captcha',
     'jobs',
+    'interview',
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
@@ -67,8 +68,8 @@ STATICFILES_DIRS = [
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # 'DIRS': [BASE_DIR / 'templates'],
-        'DIRS':['appfront/dist'],
+        'DIRS': [BASE_DIR / 'templates'],
+        # 'DIRS':['appfront/dist'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,9 +82,9 @@ TEMPLATES = [
     },
 ]
 # STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,"appfront/dist/static"),
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR,"appfront/dist/static"),
+# ]
 # TEMPLATES = [
 #     {
 #         'BACKEND': 'django.template.backends.django.DjangoTemplates',

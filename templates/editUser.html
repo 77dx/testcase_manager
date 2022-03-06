@@ -3,14 +3,23 @@
 {% block title %}编辑用户信息{% endblock %}
 {% block content %}
     <div class="container">
-        <form action="/editUser/" method="post">
+        <form action="/editUserInfo/" method="post">
+            {% csrf_token %}
             <div>
                 <label>账号：</label>
-                <input type="text" id="account" value="{{ userInfo.account }}">
+                <input type="text" id="account" name="account" value="{{ userInfo.account }}">
             </div>
             <div>
                 <label>姓名：</label>
                 <input type="text" id="name" value="{{ userInfo.name }}">
+            </div>
+            <div>
+                <label>phone：</label>
+                <input type="text" id="phone" value="{{ userInfo.phone }}">
+            </div>
+            <div>
+                <label>email：</label>
+                <input type="email" id="email" value="{{ userInfo.email }}">
             </div>
             <button type="submit">确认</button>
             <button type="reset">重置</button>
