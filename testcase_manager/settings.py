@@ -113,10 +113,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'testcase_manager',
-        'HOST': '39.104.54.123',
+        'HOST': 'rm-bp1826c80crnvve16do.mysql.rds.aliyuncs.com',
         'PORT': 3306,
-        'USER': 'root',
-        'PASSWORD': 'Dx396321556.'
+        'USER': 'cathy',
+        'PASSWORD': 'Cathy8877'
     }
 }
 

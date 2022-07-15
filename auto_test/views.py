@@ -89,19 +89,27 @@ def userList(request):
     paginator = Paginator(users_list,10)
     page = request.GET.get('page')
     users = paginator.get_page(page)
+    # if page:
+    #     data_list = paginator.page(page).object_list
+    # else:
+    #     data_list = paginator.page(1).object_list
+    # try:
+    #     page_object = paginator.page(page)
+    # except PageNotAnInteger:
+    #     page_object = paginator.page(1)
+    # except EmptyPage:
+    #     page_object = paginator.page(paginator.num_pages)
+    # return render(request,'userList.html',{'page_object':page_object,'data_list':data_list})
     return render(request, 'userList.html', {'users':users})
 
 def userInfo(request):
     id = request.GET.get("id")
-    result = serializers.serialize('json',models.User.objects.filter(id=id))
-    result_list = json.loads(result)
-    userInfo = result_list[0]["fields"]
+    userInfo = models.User.objects.filter(id=id)
     return render(request,'editUser.html',{'userInfo':userInfo})
-    # return JsonResponse(userInfo, json_dumps_params={'ensure_ascii': False}, safe=False)
 
-def editUserInfo(request):
-    account = request.POST.get('account')
-    print(account)
+def editUser(request):
+    pass
+
 
 def deleteUser(request):
     id = request.GET.get("id")
