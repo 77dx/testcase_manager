@@ -33,4 +33,5 @@ urlpatterns = [
     path('deleteUser/',views.deleteUser),
     path('api_userlist/',views.api_userlist),
     path('userInfo/',views.userInfo)
+
 ]

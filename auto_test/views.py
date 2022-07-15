@@ -117,10 +117,23 @@ def deleteUser(request):
     return redirect('/userList/')
 
 def api_userlist(request):
-    if request.method == "POST" or request.method == "GET":
-        res = serializers.serialize("json",models.User.objects.all())
-        res = json.loads(res)
-        return JsonResponse(res,json_dumps_params={'ensure_ascii':False},safe=False)
+    res = {}
+    try:
+        if request.method == "POST" or request.method == "GET":
+            res = serializers.serialize("json",models.User.objects.all())
+            res = json.loads(res)
+            for data in res:
+                res["data"] = data["fields"]
+            res["code"] = '00000'
+            res['msg'] = 'success'
+    except Exception as e:
+        # res["code"] = '99999'
+        # res['msg'] = str(e)
+        pass
+    return JsonResponse(res,json_dumps_params={'ensure_ascii':False},safe=False)
+
+
+
 
 
 
