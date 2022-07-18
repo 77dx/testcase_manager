@@ -61,34 +61,15 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'testcase_manager.urls'
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,"static").replace('\\','/'),
-]
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
-        # 'DIRS':['appfront/dist'],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
-]
 # STATIC_URL = '/static/'
 # STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR,"appfront/dist/static"),
+#     os.path.join(BASE_DIR,"static").replace('\\','/'),
 # ]
 # TEMPLATES = [
 #     {
 #         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-#         'DIRS': ['appfront/dist'],
+#         'DIRS': [BASE_DIR / 'templates'],
+#         # 'DIRS':['appfront/dist'],
 #         'APP_DIRS': True,
 #         'OPTIONS': {
 #             'context_processors': [
@@ -100,6 +81,25 @@ TEMPLATES = [
 #         },
 #     },
 # ]
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,"appfront/dist/static"),
+]
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR,'appfront/dist')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
 
 
 
