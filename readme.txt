@@ -1,4 +1,4 @@
-检查市是否连接上github
+检查是否连接上github
 git remote -v
 ssh -T git@github.com
 
