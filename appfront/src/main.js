@@ -5,16 +5,20 @@ import App from './App'
 import router from './router'
 import elementui from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import axios from 'axios'
 
+Vue.prototype.$axios = axios
 vue.use(elementui)
 vue.use(vueresource)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new vue({
+new Vue({
   el: '#app',
   router,
-  render: h => h(app)
+  axios,
+  components:{ App },
+  template: '<App/>'
 })
 
 //new Vue({
