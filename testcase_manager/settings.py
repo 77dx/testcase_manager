@@ -83,12 +83,12 @@ ROOT_URLCONF = 'testcase_manager.urls'
 # ]
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,"appfront/dist/static"),
+    os.path.join(BASE_DIR,"frontend/dist/static"),
 ]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'appfront/dist')],
+        'DIRS': [os.path.join(BASE_DIR,'frontend/dist')],
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
