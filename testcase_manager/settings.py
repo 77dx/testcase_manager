@@ -61,6 +61,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'testcase_manager.urls'
 
+#访问Django的页面
 # STATIC_URL = '/static/'
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR,"static").replace('\\','/'),
@@ -69,7 +70,6 @@ ROOT_URLCONF = 'testcase_manager.urls'
 #     {
 #         'BACKEND': 'django.template.backends.django.DjangoTemplates',
 #         'DIRS': [BASE_DIR / 'templates'],
-#         # 'DIRS':['appfront/dist'],
 #         'APP_DIRS': True,
 #         'OPTIONS': {
 #             'context_processors': [
@@ -81,6 +81,8 @@ ROOT_URLCONF = 'testcase_manager.urls'
 #         },
 #     },
 # ]
+
+#访问vue页面
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,"frontend/dist/static"),

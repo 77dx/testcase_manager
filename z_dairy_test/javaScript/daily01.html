@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+    <script>
+      function displayDate(){
+        document.getElementById("demo").innerHTML=Date();
+      }
+      function myFunction(){
+        x=document.getElementById("username");
+        x.innerHTML="鱼小七";
+      }
+    </script>
+	</head>
+	<body>
+    <h1>daily01</h1>
+    <p id="demo">Hello</p>
+    <button type="button" onclick="displayDate()">显示日期</button>
+    <script>
+      document.write("<p>这是插进去的一段文字</p>");
+    </script>
+    <p id="username">用户名</p>
+    <button type="button" onclick="alert('welcome!')">点我!</button>
+    <button type="button" onclick="myFunction()">显示用户名</button>
+    <script>
+      function changeImage(){
+        element=document.getElementById('myimage')
+        if(element.src.match("bulbon")){
+          element.src="images/pic_bulboff.gif";
+        }else{
+          element.src="images/pic_bulbon.gif";
+        }
+      }
+    </script>
+    <p>改变图片</p>
+    <img id="myimage" onclick="changeImage()" src="images/pic_bulboff.gif" width="100" height="180">
+    <p>点击灯泡就可以打开或者关闭这盏灯</p>
+    <p>改变文字颜色</p>
+    <p id="textColor">这段文字可以变色</p>
+    <button type="button" onclick="changeFontColor()">变色</button>
+    <script>
+      function changeFontColor(){
+        x=document.getElementById("textColor");
+        x.style.color="#ff0000";
+      }
+    </script>
+    <p>校验数字</p>
+    <input id="num" type="text">
+    <button  type="button" onclick="checkNumber()">检查数字</button>
+    <script>
+      function checkNumber(){
+        var x=document.getElementById("num").value
+        if(x==""||isNaN(x)){
+          alert("不是数字");
+        }else{
+          alert("是数字");
+        }
+      }
+    </script>
+    <p>运算式</p>
+    <script>
+      //注释
+      /**
+       * 也是注释
+       */
+      document.write(16+"vivo")   //结果是16vivo
+    </script>
+	</body>
+</html>
