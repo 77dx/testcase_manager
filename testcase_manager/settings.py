@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'captcha',
     'jobs',
     'interview',
+    'catalog.apps.CatalogConfig',
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True

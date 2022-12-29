@@ -17,21 +17,25 @@ from django.contrib import admin
 from django.urls import path,include
 from auto_test import views
 from django.views.generic import TemplateView
+from django.views.generic import RedirectView
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path("",include("jobs.urls")),
-    path("",include("auto_test.urls")),
     path('admin/', admin.site.urls),
+    path('catalog',include("catalog.urls")),
+    # path("",include("jobs.urls")),
+    # path("",include("auto_test.urls")),
     # path('',TemplateView.as_view(template_name="index.html")),
-    path('index/',views.index),
-    path('login/',views.login),
-    path('captcha',include('captcha.urls')),
-    path('register/',views.register),
-    path('logout/',views.logout),
-    path('userList/',views.userList),
-    path('deleteUser/',views.deleteUser),
-    path('api_userlist/',views.api_userlist),
-    path('userInfo/',views.userInfo)
+    # path('index/',views.index),
+    # path('login/',views.login),
+    # path('captcha',include('captcha.urls')),
+    # path('register/',views.register),
+    # path('logout/',views.logout),
+    # path('userList/',views.userList),
+    # path('deleteUser/',views.deleteUser),
+    # path('api_userlist/',views.api_userlist),
+    # path('userInfo/',views.userInfo)
 
 ]
