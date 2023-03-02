@@ -24,18 +24,18 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('catalog',include("catalog.urls")),
+    # path('catalog',include("catalog.urls")),
     # path("",include("jobs.urls")),
-    # path("",include("auto_test.urls")),
-    # path('',TemplateView.as_view(template_name="index.html")),
-    # path('index/',views.index),
-    # path('login/',views.login),
-    # path('captcha',include('captcha.urls')),
-    # path('register/',views.register),
-    # path('logout/',views.logout),
-    # path('userList/',views.userList),
-    # path('deleteUser/',views.deleteUser),
-    # path('api_userlist/',views.api_userlist),
-    # path('userInfo/',views.userInfo)
+    path("",include("auto_test.urls")),
+    path('',TemplateView.as_view(template_name="index.html")),
+    path('index/',views.index),
+    path('login/',views.login),
+    path('captcha',include('captcha.urls')),
+    path('register/',views.register),
+    path('logout/',views.logout),
+    path('userList/',views.userList),
+    path('deleteUser/',views.deleteUser),
+    path('api_userlist/',views.api_userlist),
+    path('userInfo/',views.userInfo)
 
 ]

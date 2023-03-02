@@ -68,3 +68,6 @@ vue-init webpack appfront
 修改启动脚本会报错的问题
 查出进程id,并杀掉进程
 kill -9 $(ps -ef |grep python | grep -v grep | awk '{print $2}')
+
+启动Django
+python manage.py runserver 127.0.0.1:8000
