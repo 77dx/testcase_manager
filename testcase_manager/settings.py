@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'jobs',
     'interview',
     'catalog.apps.CatalogConfig',
+    'MasterOfferPrice'
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True

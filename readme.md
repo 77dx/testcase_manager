@@ -45,7 +45,7 @@ git pull origin master
 
 
 创建django app
-django-admin.py startapp TestModel
+python manage.py startapp TestModel
 
 数据库迁移
 python manage.py migrate    # 创建表结构

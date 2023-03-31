@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from auto_test import views
+from testcase_manager.MasterOfferPrice import views
 from django.views.generic import TemplateView
 from django.views.generic import RedirectView
 from django.conf import settings
@@ -36,6 +37,7 @@ urlpatterns = [
     path('userList/',views.userList),
     path('deleteUser/',views.deleteUser),
     path('api_userlist/',views.api_userlist),
-    path('userInfo/',views.userInfo)
+    path('userInfo/',views.userInfo),
+    path('offerprice/',views.offerprice)
 
 ]
