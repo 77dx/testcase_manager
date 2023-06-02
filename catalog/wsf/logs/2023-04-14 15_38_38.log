@@ -1,0 +1,79 @@
+2023-04-14 15:38:44,600 - HandleRequest.py[line:17] - INFO: 请求url:https://test-master-ocs.wanshifu.com/capacity/orderDistribute/addHandlePush
+2023-04-14 15:38:44,601 - HandleRequest.py[line:18] - INFO: 请求method:POST
+2023-04-14 15:38:44,601 - HandleRequest.py[line:19] - INFO: 请求headers:{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': 'application/json, text/javascript, */*; q=0.01'}
+2023-04-14 15:38:44,602 - HandleRequest.py[line:20] - INFO: 请求data:userOrderId=12190359390&phones=15971572535
+2023-04-14 15:38:45,896 - wsf_api.py[line:451] - INFO: 响应： {"code":1,"msg":"","data":[]}
+2023-04-14 15:38:46,020 - HandleRequest.py[line:31] - INFO: 接口名称:师傅端登录
+2023-04-14 15:38:46,020 - HandleRequest.py[line:17] - INFO: 请求url:https://test-master-app-api.wanshifu.com/account/login
+2023-04-14 15:38:46,020 - HandleRequest.py[line:18] - INFO: 请求method:post
+2023-04-14 15:38:46,020 - HandleRequest.py[line:19] - INFO: 请求headers:{'Content-Type': 'application/json;charset=utf-8', 'apkChannel': 'default', 'phoneType': 'android', 'versionCode': '767', 'versionName': '7.6.7', 'signature': None}
+2023-04-14 15:38:46,021 - HandleRequest.py[line:20] - INFO: 请求data:{'apkChannel': 'default', 'phoneType': 'android', 'device_id': '1507bfd3f7351f34ad0', 'phoneSystemVersion': '11', 'phoneBrandModel': 'realme', 'signature': '5bb3adde59daede90c9c7786e48386b4', 'loginCode': '72A1CE33684FA987A59FEB5CC61CC493', 'deviceId': '1507bfd3f7351f34ad0', 'province_name': '', 'timeStamp': '1650252357103', 'jpushRegId': '1507bfd3f7351f34ad0', 'password': '72A1CE33684FA987A59FEB5CC61CC493', 'phoneModel': 'RMX3361', 'phone': 'A99071ACBA8634FCEFB4B273CD6A39B0', 'loginWay': 'password', 'regId': '1507bfd3f7351f34ad0'}
+2023-04-14 15:38:46,396 - HandleRequest.py[line:34] - INFO: 接口响应：{"status": "1", "code": "success", "data": {"signature": "9e722c03d561ee819fc92c487467835c", "loginStatus": "normal", "timestamp": "1681457925", "masterName": "马芳", "limitAtionsResponse": null, "partnerInviteMasterId": "5073598324"}, "msg": ""}
+2023-04-14 15:38:46,396 - wsf_api.py[line:246] - INFO: 15971572535师傅登录成功
+2023-04-14 15:38:46,397 - HandleRequest.py[line:31] - INFO: 接口名称:师傅端报价招标报价
+2023-04-14 15:38:46,397 - HandleRequest.py[line:17] - INFO: 请求url:https://test-master-order-api.wanshifu.com/task/ordinaryService/offerPrice
+2023-04-14 15:38:46,397 - HandleRequest.py[line:18] - INFO: 请求method:post
+2023-04-14 15:38:46,397 - HandleRequest.py[line:19] - INFO: 请求headers:{'Content-Type': 'application/json;charset=utf-8', 'apkChannel': 'default', 'phoneType': 'android', 'versionCode': '767', 'versionName': '7.6.7', 'signature': '9e722c03d561ee819fc92c487467835c'}
+2023-04-14 15:38:46,397 - HandleRequest.py[line:20] - INFO: 请求data:{'offerPrice': 55, 'orderId': 61262634545, 'offerNote': '', 'belongUserShare': '0', 'orderServeType': '4', 'includeFitting': 'False', 'orderModifyTime': '2023-04-14 15:21:05'}
+2023-04-14 15:38:47,944 - HandleRequest.py[line:34] - INFO: 接口响应：{"status": "1", "code": "success", "data": null, "msg": ""}
+2023-04-14 15:38:47,944 - wsf_api.py[line:267] - INFO: 师傅报价成功
+2023-04-14 15:38:47,944 - testScenario.py[line:141] - INFO: 师傅15971572535报价成功，报价进度：1/1
+2023-04-14 15:38:47,945 - testScenario.py[line:144] - INFO: 报价已结束，成功报价：1/1
+2023-04-14 15:38:58,786 - HandleRequest.py[line:17] - INFO: 请求url:https://test-master-ocs.wanshifu.com/capacity/orderDistribute/addHandlePush
+2023-04-14 15:38:58,787 - HandleRequest.py[line:18] - INFO: 请求method:POST
+2023-04-14 15:38:58,787 - HandleRequest.py[line:19] - INFO: 请求headers:{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': 'application/json, text/javascript, */*; q=0.01'}
+2023-04-14 15:38:58,787 - HandleRequest.py[line:20] - INFO: 请求data:userOrderId=12190359390&phones=15971572535
+2023-04-14 15:38:59,974 - wsf_api.py[line:451] - INFO: 响应： {"code":1,"msg":"","data":[]}
+2023-04-14 15:39:00,126 - HandleRequest.py[line:31] - INFO: 接口名称:师傅端登录
+2023-04-14 15:39:00,126 - HandleRequest.py[line:17] - INFO: 请求url:https://test-master-app-api.wanshifu.com/account/login
+2023-04-14 15:39:00,126 - HandleRequest.py[line:18] - INFO: 请求method:post
+2023-04-14 15:39:00,127 - HandleRequest.py[line:19] - INFO: 请求headers:{'Content-Type': 'application/json;charset=utf-8', 'apkChannel': 'default', 'phoneType': 'android', 'versionCode': '767', 'versionName': '7.6.7', 'signature': '9e722c03d561ee819fc92c487467835c'}
+2023-04-14 15:39:00,127 - HandleRequest.py[line:20] - INFO: 请求data:{'apkChannel': 'default', 'phoneType': 'android', 'device_id': '1507bfd3f7351f34ad0', 'phoneSystemVersion': '11', 'phoneBrandModel': 'realme', 'signature': '5bb3adde59daede90c9c7786e48386b4', 'loginCode': '72A1CE33684FA987A59FEB5CC61CC493', 'deviceId': '1507bfd3f7351f34ad0', 'province_name': '', 'timeStamp': '1650252357103', 'jpushRegId': '1507bfd3f7351f34ad0', 'password': '72A1CE33684FA987A59FEB5CC61CC493', 'phoneModel': 'RMX3361', 'phone': 'A99071ACBA8634FCEFB4B273CD6A39B0', 'loginWay': 'password', 'regId': '1507bfd3f7351f34ad0'}
+2023-04-14 15:39:00,498 - HandleRequest.py[line:34] - INFO: 接口响应：{"status": "1", "code": "success", "data": {"signature": "dc8111df2b29409449bb5da0905950f3", "loginStatus": "normal", "timestamp": "1681457940", "masterName": "马芳", "limitAtionsResponse": null, "partnerInviteMasterId": "5073598324"}, "msg": ""}
+2023-04-14 15:39:00,498 - wsf_api.py[line:246] - INFO: 15971572535师傅登录成功
+2023-04-14 15:39:00,499 - HandleRequest.py[line:31] - INFO: 接口名称:师傅端报价招标报价
+2023-04-14 15:39:00,499 - HandleRequest.py[line:17] - INFO: 请求url:https://test-master-order-api.wanshifu.com/task/ordinaryService/offerPrice
+2023-04-14 15:39:00,499 - HandleRequest.py[line:18] - INFO: 请求method:post
+2023-04-14 15:39:00,499 - HandleRequest.py[line:19] - INFO: 请求headers:{'Content-Type': 'application/json;charset=utf-8', 'apkChannel': 'default', 'phoneType': 'android', 'versionCode': '767', 'versionName': '7.6.7', 'signature': 'dc8111df2b29409449bb5da0905950f3'}
+2023-04-14 15:39:00,500 - HandleRequest.py[line:20] - INFO: 请求data:{'offerPrice': 89, 'orderId': 61262634545, 'offerNote': '', 'belongUserShare': '0', 'orderServeType': '4', 'includeFitting': 'False', 'orderModifyTime': '2023-04-14 15:21:05'}
+2023-04-14 15:39:00,887 - HandleRequest.py[line:34] - INFO: 接口响应：{"status": "1", "code": "success", "data": {"tipContent": "抱歉！该订单已关闭或指派了其它师傅，无法再进行报价/抢单,您可以去看看其它订单", "alertBoxType": "order_offer_status", "tipTitle": "温馨提示"}, "msg": ""}
+2023-04-14 15:39:00,887 - wsf_api.py[line:267] - INFO: 师傅报价成功
+2023-04-14 15:39:00,888 - testScenario.py[line:143] - ERROR: 师傅15971572535报价失败，报价进度：1/1
+2023-04-14 15:39:00,888 - testScenario.py[line:144] - INFO: 报价已结束，成功报价：0/1
+2023-04-14 15:40:38,629 - HandleRequest.py[line:17] - INFO: 请求url:https://test-master-ocs.wanshifu.com/capacity/orderDistribute/addHandlePush
+2023-04-14 15:40:38,629 - HandleRequest.py[line:18] - INFO: 请求method:POST
+2023-04-14 15:40:38,629 - HandleRequest.py[line:19] - INFO: 请求headers:{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36', 'X-Requested-With': 'XMLHttpRequest', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': 'application/json, text/javascript, */*; q=0.01'}
+2023-04-14 15:40:38,629 - HandleRequest.py[line:20] - INFO: 请求data:userOrderId=12190359474&phones=15971572535;17688968877
+2023-04-14 15:40:39,895 - wsf_api.py[line:451] - INFO: 响应： {"code":1,"msg":"","data":[]}
+2023-04-14 15:40:40,073 - HandleRequest.py[line:31] - INFO: 接口名称:师傅端登录
+2023-04-14 15:40:40,073 - HandleRequest.py[line:17] - INFO: 请求url:https://test-master-app-api.wanshifu.com/account/login
+2023-04-14 15:40:40,073 - HandleRequest.py[line:18] - INFO: 请求method:post
+2023-04-14 15:40:40,073 - HandleRequest.py[line:19] - INFO: 请求headers:{'Content-Type': 'application/json;charset=utf-8', 'apkChannel': 'default', 'phoneType': 'android', 'versionCode': '767', 'versionName': '7.6.7', 'signature': 'dc8111df2b29409449bb5da0905950f3'}
+2023-04-14 15:40:40,073 - HandleRequest.py[line:20] - INFO: 请求data:{'apkChannel': 'default', 'phoneType': 'android', 'device_id': '1507bfd3f7351f34ad0', 'phoneSystemVersion': '11', 'phoneBrandModel': 'realme', 'signature': '5bb3adde59daede90c9c7786e48386b4', 'loginCode': '72A1CE33684FA987A59FEB5CC61CC493', 'deviceId': '1507bfd3f7351f34ad0', 'province_name': '', 'timeStamp': '1650252357103', 'jpushRegId': '1507bfd3f7351f34ad0', 'password': '72A1CE33684FA987A59FEB5CC61CC493', 'phoneModel': 'RMX3361', 'phone': 'A99071ACBA8634FCEFB4B273CD6A39B0', 'loginWay': 'password', 'regId': '1507bfd3f7351f34ad0'}
+2023-04-14 15:40:40,619 - HandleRequest.py[line:34] - INFO: 接口响应：{"status": "1", "code": "success", "data": {"signature": "8c71b5bfba29f7d1f491411e891cdd47", "loginStatus": "normal", "timestamp": "1681458040", "masterName": "马芳", "limitAtionsResponse": null, "partnerInviteMasterId": "5073598324"}, "msg": ""}
+2023-04-14 15:40:40,620 - wsf_api.py[line:246] - INFO: 15971572535师傅登录成功
+2023-04-14 15:40:40,620 - HandleRequest.py[line:31] - INFO: 接口名称:师傅端报价招标报价
+2023-04-14 15:40:40,620 - HandleRequest.py[line:17] - INFO: 请求url:https://test-master-order-api.wanshifu.com/task/ordinaryService/offerPrice
+2023-04-14 15:40:40,620 - HandleRequest.py[line:18] - INFO: 请求method:post
+2023-04-14 15:40:40,620 - HandleRequest.py[line:19] - INFO: 请求headers:{'Content-Type': 'application/json;charset=utf-8', 'apkChannel': 'default', 'phoneType': 'android', 'versionCode': '767', 'versionName': '7.6.7', 'signature': '8c71b5bfba29f7d1f491411e891cdd47'}
+2023-04-14 15:40:40,620 - HandleRequest.py[line:20] - INFO: 请求data:{'offerPrice': 62, 'orderId': 61263368203, 'offerNote': '', 'belongUserShare': '0', 'orderServeType': '4', 'includeFitting': 'False', 'orderModifyTime': '2023-04-14 15:40:17'}
+2023-04-14 15:40:41,698 - HandleRequest.py[line:34] - INFO: 接口响应：{"status": "1", "code": "success", "data": null, "msg": ""}
+2023-04-14 15:40:41,698 - wsf_api.py[line:267] - INFO: 师傅报价成功
+2023-04-14 15:40:41,698 - testScenario.py[line:141] - INFO: 师傅15971572535报价成功，报价进度：1/2
+2023-04-14 15:40:41,789 - HandleRequest.py[line:31] - INFO: 接口名称:师傅端登录
+2023-04-14 15:40:41,790 - HandleRequest.py[line:17] - INFO: 请求url:https://test-master-app-api.wanshifu.com/account/login
+2023-04-14 15:40:41,790 - HandleRequest.py[line:18] - INFO: 请求method:post
+2023-04-14 15:40:41,790 - HandleRequest.py[line:19] - INFO: 请求headers:{'Content-Type': 'application/json;charset=utf-8', 'apkChannel': 'default', 'phoneType': 'android', 'versionCode': '767', 'versionName': '7.6.7', 'signature': '8c71b5bfba29f7d1f491411e891cdd47'}
+2023-04-14 15:40:41,790 - HandleRequest.py[line:20] - INFO: 请求data:{'apkChannel': 'default', 'phoneType': 'android', 'device_id': '1507bfd3f7351f34ad0', 'phoneSystemVersion': '11', 'phoneBrandModel': 'realme', 'signature': '5bb3adde59daede90c9c7786e48386b4', 'loginCode': '72A1CE33684FA987A59FEB5CC61CC493', 'deviceId': '1507bfd3f7351f34ad0', 'province_name': '', 'timeStamp': '1650252357103', 'jpushRegId': '1507bfd3f7351f34ad0', 'password': '72A1CE33684FA987A59FEB5CC61CC493', 'phoneModel': 'RMX3361', 'phone': 'B21968142A193BDD2F9B9F4A8D1026F9', 'loginWay': 'password', 'regId': '1507bfd3f7351f34ad0'}
+2023-04-14 15:40:42,142 - HandleRequest.py[line:34] - INFO: 接口响应：{"status": "1", "code": "success", "data": {"signature": "96f60e05ef6b1fc888312fabf281dcd4", "loginStatus": "normal", "timestamp": "1681458041", "masterName": "党旭", "limitAtionsResponse": null, "partnerInviteMasterId": "null"}, "msg": ""}
+2023-04-14 15:40:42,143 - wsf_api.py[line:246] - INFO: 17688968877师傅登录成功
+2023-04-14 15:40:42,143 - HandleRequest.py[line:31] - INFO: 接口名称:师傅端报价招标报价
+2023-04-14 15:40:42,143 - HandleRequest.py[line:17] - INFO: 请求url:https://test-master-order-api.wanshifu.com/task/ordinaryService/offerPrice
+2023-04-14 15:40:42,143 - HandleRequest.py[line:18] - INFO: 请求method:post
+2023-04-14 15:40:42,143 - HandleRequest.py[line:19] - INFO: 请求headers:{'Content-Type': 'application/json;charset=utf-8', 'apkChannel': 'default', 'phoneType': 'android', 'versionCode': '767', 'versionName': '7.6.7', 'signature': '96f60e05ef6b1fc888312fabf281dcd4'}
+2023-04-14 15:40:42,144 - HandleRequest.py[line:20] - INFO: 请求data:{'offerPrice': 100, 'orderId': 61263368203, 'offerNote': '', 'belongUserShare': '0', 'orderServeType': '4', 'includeFitting': 'False', 'orderModifyTime': '2023-04-14 15:40:17'}
+2023-04-14 15:40:42,767 - HandleRequest.py[line:34] - INFO: 接口响应：{"status": "1", "code": "success", "data": {"tipContent": "您目前有违规投诉需要缴纳违约金，请前往“投诉记录”了解情况。", "alertBoxType": "penalty_amount", "tipTitle": "温馨提示"}, "msg": ""}
+2023-04-14 15:40:42,767 - wsf_api.py[line:267] - INFO: 师傅报价成功
+2023-04-14 15:40:42,767 - testScenario.py[line:143] - ERROR: 师傅17688968877报价失败，报价进度：2/2
+2023-04-14 15:40:42,768 - testScenario.py[line:144] - INFO: 报价已结束，成功报价：1/2
+2023-04-14 15:56:30,437 - autoreload.py[line:266] - INFO: D:\wsf\github\testcase_manager\testcase_manager\MasterOfferPrice\views.py changed, reloading.

@@ -1,0 +1,12 @@
+2023-06-02 17:46:36,287 - log.py[line:241] - ERROR: Internal Server Error: /catalog/offerprice
+Traceback (most recent call last):
+  File "D:\Program Files\python3.9\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Program Files\python3.9\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Program Files\python3.9\lib\site-packages\django\views\decorators\http.py", line 43, in inner
+    return func(request, *args, **kwargs)
+  File "D:\wsf\github\testcase_manager\testcase_manager\catalog\views.py", line 11, in offerprice
+    data = request.body["orderNo"]
+TypeError: byte indices must be integers or slices, not str
+2023-06-02 17:46:52,452 - autoreload.py[line:266] - INFO: D:\wsf\github\testcase_manager\testcase_manager\catalog\views.py changed, reloading.

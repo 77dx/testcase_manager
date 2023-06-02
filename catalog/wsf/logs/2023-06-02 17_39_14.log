@@ -1,0 +1,4 @@
+2023-06-02 17:39:16,396 - log.py[line:241] - WARNING: Method Not Allowed (GET): /catalog/offerprice
+2023-06-02 17:39:52,565 - log.py[line:241] - WARNING: Forbidden (CSRF cookie not set.): /catalog/offerprice
+2023-06-02 17:40:13,228 - log.py[line:241] - WARNING: Forbidden (CSRF cookie not set.): /catalog/offerprice
+2023-06-02 17:41:12,840 - autoreload.py[line:266] - INFO: D:\wsf\github\testcase_manager\testcase_manager\testcase_manager\settings.py changed, reloading.

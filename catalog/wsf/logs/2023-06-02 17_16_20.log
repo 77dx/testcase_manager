@@ -1,0 +1,4 @@
+2023-06-02 17:18:14,795 - log.py[line:241] - WARNING: Not Found: /catalog/testapi
+2023-06-02 17:18:41,213 - log.py[line:241] - WARNING: Not Found: /testapi
+2023-06-02 17:18:51,389 - log.py[line:241] - WARNING: Not Found: /catalog/testapi
+2023-06-02 17:19:32,072 - autoreload.py[line:266] - INFO: D:\wsf\github\testcase_manager\testcase_manager\testcase_manager\urls.py changed, reloading.

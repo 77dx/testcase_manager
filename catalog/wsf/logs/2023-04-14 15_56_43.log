@@ -1,0 +1,10 @@
+2023-04-14 15:56:45,410 - log.py[line:241] - ERROR: Internal Server Error: /offerprice/
+Traceback (most recent call last):
+  File "D:\Program Files\python3.9\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Program Files\python3.9\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Program Files\python3.9\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view MasterOfferPrice.views.offerprice didn't return an HttpResponse object. It returned None instead.
+2023-04-14 15:56:57,449 - autoreload.py[line:266] - INFO: D:\wsf\github\testcase_manager\testcase_manager\MasterOfferPrice\views.py changed, reloading.

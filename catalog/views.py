@@ -1,5 +1,5 @@
 import json
-
+from catalog.wsf import testScenario
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods
@@ -8,8 +8,16 @@ from django.views.decorators.http import require_http_methods
 @require_http_methods(["POST"])
 def offerprice(request):
     response = {}
-    data = request.body
-    json_data = json.loads(data)["orderNo"]
+    param = json.loads(request.body)
+    orderNo = param["orderNo"]
+    price = param["price"]
+    offerNumber = param["offerNumber"]
+    auto = param["auto"]
+    try:
+        testScenario.TestScenario.auto_offerPrice(orderNo,offerNumber,[price,price],auto)
+        response['msg'] = "success"
+    except Exception as e:
+        print(e)
+        response ['msg'] = "fail"
 
-    response['data'] = json_data
     return JsonResponse(response)

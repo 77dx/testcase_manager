@@ -1,0 +1,2 @@
+2023-06-02 17:34:59,196 - log.py[line:241] - WARNING: Method Not Allowed (GET): /catalog/testapi
+2023-06-02 17:36:27,832 - autoreload.py[line:266] - INFO: D:\wsf\github\testcase_manager\testcase_manager\catalog\views.py changed, reloading.
