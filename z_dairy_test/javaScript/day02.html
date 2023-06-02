@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS学习</title>
+    <script>
+      function add(){
+        var x = document.getElementById("x").value;
+        var y = document.getElementById("y").value;
+        z = x + y;
+        alert(z);
+      }
+    </script>
+</head>
+<body>
+  <div>
+    x：<input type="text" id="x"/><br/>
+    y：<input type="text" id="y"/><br/>
+    <button onclick="add()">求和</button>
+    <p id="s"></p>
+  </div>
+</body>
+</html>

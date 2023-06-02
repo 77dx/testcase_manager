@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from auto_test import views
-from MasterOfferPrice import views as offer
+from offerprice import views as offer
 from django.views.generic import TemplateView
 from django.views.generic import RedirectView
 from django.conf import settings
@@ -25,7 +25,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('catalog',include("catalog.urls")),
+    path('catalog/',include("catalog.urls")),
     # path("",include("jobs.urls")),
     path('offerprice/',offer.offerprice),
     path("",include("auto_test.urls")),
